@@ -94,3 +94,23 @@ Dynamic Coordinate Warping: Instantly shifting live memory offsets to induce fat
 Hardware Thread Freezing: Issuing low-level kernel barriers to isolate malicious processes on sight.
 
 "We choose to destroy memory to prove baseline hardware stability. What happens when we decide to respond... is a matter of architectural choice."
+
+## ⚠️ Legal Disclaimer & Terms of Use
+
+### 1. License & Operational Window
+This repository is released under the **MIT License**. The free Community Edition contains a **12-month operational execution window** from the release date. Developers and organizations may freely static-link, audit, and deploy this SDK across internal, research, or commercial binaries within this window.
+
+### 2. "AS IS" Standard & Memory Management Safety
+* **No Express Guarantee:** This software is provided *"AS IS"*, without warranty of any kind, express or implied.
+* **Developer Memory Boundary Responsibility:** The `bangsaen_sec_destroy_and_contaminate()` primitive performs direct bare-metal pointer traversal and hardware CPU cache line flushing (`_mm_clflush` / `dc civac`). The integrating developer is solely responsible for ensuring that all buffer pointers and memory allocation sizes provided to the SDK are valid, aligned, and mutable. 
+* **Limitation of Liability:** Bangsaen AI Labs shall not be held liable for any memory corruption, application segmentation faults, runtime crashes, or data loss resulting from improper buffer boundary inputs or invalid pointer passes.
+
+---
+
+## 📩 Enterprise & Commercial Inquiries
+
+For extended enterprise licensing, continuous maintenance SLAs, or integrating real-time **3072D Koopman Space Intent Analysis** with GCP Cloud Attestation, please contact:
+
+* **Organization:** Bangsaen AI Labs
+* **Email:** `drtanet@bangsaenai.com`
+* **Repository:** [https://github.com/bangsaenai/bangsaen-active-defense-sdk](https://github.com/bangsaenai/bangsaen-active-defense-sdk)
