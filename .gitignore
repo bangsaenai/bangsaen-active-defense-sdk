@@ -1,0 +1,19 @@
+# Compiled Object files
+*.obj
+*.o
+*.lo
+*.slo
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Static / Dynamic Libraries
+*.lib
+*.a
+*.so
+*.dylib
+*.dll
+
+# Executables
+*.exe
